@@ -1,0 +1,261 @@
+java version "1.6.0_24"
+Java(TM) SE Runtime Environment (build 1.6.0_24-b07)
+Java HotSpot(TM) 64-Bit Server VM (build 19.1-b02, mixed mode)
+
+2014-09-25 14:41:49.894 Oracle Coherence 3.3.1/389 <Info> (thread=main, member=n/a): Loaded operational configuration from resource "jar:file:/opt/projects/trading/shared/lib/coherence.jar!/tangosol-coherence.xml"
+2014-09-25 14:41:49.899 Oracle Coherence 3.3.1/389 <Info> (thread=main, member=n/a): Loaded operational overrides from resource "file:/opt/projects/trading/shared/conf/tangosol-coherence-override-prod.xml"
+2014-09-25 14:41:49.900 Oracle Coherence 3.3.1/389 <D5> (thread=main, member=n/a): Optional configuration override "/tangosol-coherence-override.xml" is not specified
+
+Oracle Coherence Version 3.3.1/389
+ Grid Edition: Production mode
+Copyright (c) 2000-2007 Oracle. All rights reserved.
+
+2014-09-25 14:41:50.079 Oracle Coherence GE 3.3.1/389 <Info> (thread=main, member=n/a): Loaded cache configuration from resource "file:/opt/projects/trading/shared/conf/wam-cache-config.xml"
+2014-09-25 14:41:50.471 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Service Cluster joined the cluster with senior service member n/a
+2014-09-25 14:41:55.675 Oracle Coherence GE 3.3.1/389 <Info> (thread=Cluster, member=n/a): Created a new cluster with Member(Id=1, Timestamp=2014-09-25 14:41:50.371, Address=10.199.0.30:8088, MachineId=52510, Location=process:19583@dssprod01, Edition=Grid Edition, Mode=Production, CpuCount=2, SocketCount=1) UID=0x0AC7001E00000148AEC356A3CD1E1F98
+2014-09-25 14:41:55.801 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache joined the cluster with senior service member 1
+2014-09-25 14:41:55.874 Oracle Coherence GE 3.3.1/389 <D5> (thread=ReplicatedCache, member=1): Service ReplicatedCache joined the cluster with senior service member 1
+2014-09-25 14:41:55.875 Oracle Coherence GE 3.3.1/389 <Info> (thread=main, member=1): Started DefaultCacheServer...
+
+SafeCluster: Name=n/a
+
+Group{Address=239.199.0.5, Port=61069, TTL=3}
+
+MasterMemberSet
+  (
+  ThisMember=Member(Id=1, Timestamp=2014-09-25 14:41:50.371, Address=10.199.0.30:8088, MachineId=52510, Location=process:19583@dssprod01)
+  OldestMember=Member(Id=1, Timestamp=2014-09-25 14:41:50.371, Address=10.199.0.30:8088, MachineId=52510, Location=process:19583@dssprod01)
+  ActualMemberSet=MemberSet(Size=1, BitSetCount=2
+    Member(Id=1, Timestamp=2014-09-25 14:41:50.371, Address=10.199.0.30:8088, MachineId=52510, Location=process:19583@dssprod01)
+    )
+  RecycleMillis=240000
+  RecycleSet=MemberSet(Size=0, BitSetCount=0
+    )
+  )
+
+Services
+  (
+  TcpRing{TcpSocketAccepter{State=STATE_OPEN, ServerSocket=10.199.0.30:8088}, Connections=[]}
+  ClusterService{Name=Cluster, State=(SERVICE_STARTED, STATE_JOINED), Id=0, Version=3.3, OldestMemberId=1}
+  DistributedCache{Name=DistributedCache, State=(SERVICE_STARTED), Id=1, Version=3.2, OldestMemberId=1, LocalStorage=enabled, PartitionCount=257, BackupCount=1, AssignedPartitions=257, BackupPartitions=0}
+  ReplicatedCache{Name=ReplicatedCache, State=(SERVICE_STARTED), Id=2, Version=3.0, OldestMemberId=1}
+  )
+
+2014-09-25 14:41:55.963 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member(Id=2, Timestamp=2014-09-25 14:41:55.763, Address=10.199.0.26:8088, MachineId=52506, Location=process:2769@pssprod01) joined Cluster with senior member 1
+2014-09-25 14:41:56.017 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member(Id=3, Timestamp=2014-09-25 14:41:55.818, Address=10.199.0.32:8088, MachineId=52512, Location=process:9053@dssprod02) joined Cluster with senior member 1
+2014-09-25 14:41:56.031 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member(Id=4, Timestamp=2014-09-25 14:41:55.834, Address=10.199.0.27:8088, MachineId=52507, Location=process:14840@pssprod02) joined Cluster with senior member 1
+2014-09-25 14:41:56.116 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 2 joined Service DistributedCache with senior member 1
+2014-09-25 14:41:56.133 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache: sending ServiceConfigSync containing 258 entries to Member 2
+2014-09-25 14:41:56.157 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 3 joined Service DistributedCache with senior member 1
+2014-09-25 14:41:56.162 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache: sending ServiceConfigSync containing 258 entries to Member 3
+2014-09-25 14:41:56.179 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 4 joined Service DistributedCache with senior member 1
+2014-09-25 14:41:56.187 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache: sending ServiceConfigSync containing 258 entries to Member 4
+2014-09-25 14:41:56.222 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 2 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:41:56.223 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): 1> Transferring 65 out of 257 vulnerable partitions to member 4 requesting 65
+2014-09-25 14:41:56.255 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 3 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:41:56.269 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 4 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:41:57.676 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): TcpRing: connecting to member 2 using TcpSocket{State=STATE_OPEN, Socket=Socket[addr=/10.199.0.26,port=8088,localport=47319]}
+2014-09-25 14:41:57.914 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member(Id=5, Timestamp=2014-09-25 14:41:57.721, Address=10.199.0.29:8088, MachineId=52509, Location=process:5974@pssprod03) joined Cluster with senior member 1
+2014-09-25 14:41:58.073 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 5 joined Service DistributedCache with senior member 1
+2014-09-25 14:41:58.081 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache: sending ServiceConfigSync containing 258 entries to Member 5
+2014-09-25 14:41:58.124 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): 1> Transferring 52 out of 192 vulnerable partitions to member 5 requesting 52
+2014-09-25 14:41:58.175 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 5 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:42:00.081 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): 1> Transferring 52 out of 140 vulnerable partitions to member 3 requesting 52
+2014-09-25 14:42:00.191 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): 1> Transferring 36 out of 88 vulnerable partitions to member 2 requesting 36
+2014-09-25 14:42:00.264 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=1): 1> Transferring 52 out of 52 partitions to a machine-safe backup 1 at member 5 (under 52)
+2014-09-25 14:42:01.116 Oracle Coherence GE 3.3.1/389 <D5> (thread=TcpRingListener, member=1): TcpRing: connecting to member 5 using TcpSocket{State=STATE_OPEN, Socket=Socket[addr=/10.199.0.29,port=55019,localport=8088]}
+2014-09-25 14:42:10.877 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member(Id=6, Timestamp=2014-09-25 14:42:10.701, Address=10.199.0.26:8089, MachineId=52506, Location=process:2864@pssprod01) joined Cluster with senior member 1
+2014-09-25 14:42:13.587 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 6 joined Service DistributedCache with senior member 1
+2014-09-25 14:42:13.599 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache: sending ServiceConfigSync containing 258 entries to Member 6
+2014-09-25 14:42:30.784 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 6 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:45:57.791 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member(Id=7, Timestamp=2014-09-25 14:45:57.606, Address=10.199.0.27:8089, MachineId=52507, Location=process:15116@pssprod02) joined Cluster with senior member 1
+2014-09-25 14:45:58.845 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): TcpRing: disconnected from member 2 due to a disconnect request
+2014-09-25 14:46:00.365 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 7 joined Service DistributedCache with senior member 1
+2014-09-25 14:46:00.377 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache: sending ServiceConfigSync containing 302 entries to Member 7
+2014-09-25 14:46:00.486 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 7 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:47:47.223 Oracle Coherence GE 3.3.1/389 <D5> (thread=TcpRingListener, member=1): TcpRing: connecting to member 2 using TcpSocket{State=STATE_OPEN, Socket=Socket[addr=/10.199.0.26,port=54946,localport=8088]}
+2014-09-25 14:48:46.883 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): TcpRing: disconnected from member 2 due to a kill request
+2014-09-25 14:48:46.883 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 2 left service DistributedCache with senior member 1
+2014-09-25 14:48:46.885 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 2 left service ReplicatedCache with senior member 1
+2014-09-25 14:48:46.885 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Member 2 left Cluster with senior member 1
+2014-09-25 14:48:48.446 Oracle Coherence GE 3.3.1/389 <D5> (thread=TcpRingListener, member=1): TcpRing: connecting to member 4 using TcpSocket{State=STATE_OPEN, Socket=Socket[addr=/10.199.0.27,port=56642,localport=8088]}
+2014-09-25 14:48:48.942 Oracle Coherence GE 3.3.1/389 <Warning> (thread=PacketPublisher, member=1): Timeout while delivering a packet; requesting the departure confirmation for Member(Id=6, Timestamp=2014-09-25 14:48:48.942, Address=10.199.0.26:8089, MachineId=52506, Location=process:2864@pssprod01)
+by MemberSet(Size=1, BitSetCount=1
+  Member(Id=3, Timestamp=2014-09-25 14:41:55.818, Address=10.199.0.32:8088, MachineId=52512, Location=process:9053@dssprod02)
+  )
+2014-09-25 14:48:48.943 Oracle Coherence GE 3.3.1/389 <Warning> (thread=PacketPublisher, member=1): Timeout while delivering a packet; requesting the departure confirmation for Member(Id=3, Timestamp=2014-09-25 14:48:48.943, Address=10.199.0.32:8088, MachineId=52512, Location=process:9053@dssprod02)
+by MemberSet(Size=1, BitSetCount=1
+  Member(Id=4, Timestamp=2014-09-25 14:41:55.834, Address=10.199.0.27:8088, MachineId=52507, Location=process:14840@pssprod02)
+  )
+2014-09-25 14:48:48.943 Oracle Coherence GE 3.3.1/389 <Warning> (thread=PacketPublisher, member=1): Timeout while delivering a packet; requesting the departure confirmation for Member(Id=4, Timestamp=2014-09-25 14:48:48.943, Address=10.199.0.27:8088, MachineId=52507, Location=process:14840@pssprod02)
+by MemberSet(Size=1, BitSetCount=1
+  Member(Id=5, Timestamp=2014-09-25 14:41:57.721, Address=10.199.0.29:8088, MachineId=52509, Location=process:5974@pssprod03)
+  )
+2014-09-25 14:48:48.943 Oracle Coherence GE 3.3.1/389 <Warning> (thread=PacketPublisher, member=1): Timeout while delivering a packet; requesting the departure confirmation for Member(Id=5, Timestamp=2014-09-25 14:48:48.943, Address=10.199.0.29:8088, MachineId=52509, Location=process:5974@pssprod03)
+by MemberSet(Size=1, BitSetCount=1
+  Member(Id=7, Timestamp=2014-09-25 14:45:57.606, Address=10.199.0.27:8089, MachineId=52507, Location=process:15116@pssprod02)
+  )
+2014-09-25 14:48:48.943 Oracle Coherence GE 3.3.1/389 <Error> (thread=PacketPublisher, member=1): This node appears to have become disconnected from the rest of the cluster containing 5 nodes. All departure confirmation requests went unanswered.
+Stopping cluster service.
+2014-09-25 14:48:48.944 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=1): Service Cluster left the cluster
+2014-09-25 14:48:49.045 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=1): Service DistributedCache left the cluster
+2014-09-25 14:48:49.046 Oracle Coherence GE 3.3.1/389 <D5> (thread=ReplicatedCache, member=1): Service ReplicatedCache left the cluster
+2014-09-25 14:48:50.937 Oracle Coherence GE 3.3.1/389 <Info> (thread=main, member=n/a): Restarting cluster
+2014-09-25 14:48:51.051 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Service Cluster joined the cluster with senior service member n/a
+2014-09-25 14:49:07.268 Oracle Coherence GE 3.3.1/389 <Info> (thread=Cluster, member=n/a): This Member(Id=6, Timestamp=2014-09-25 14:49:07.065, Address=10.199.0.30:8088, MachineId=52510, Location=process:19583@dssprod01, Edition=Grid Edition, Mode=Production, CpuCount=2, SocketCount=1) joined cluster with senior Member(Id=1, Timestamp=2014-09-25 14:47:45.342, Address=10.199.0.26:8089, MachineId=52506, Location=process:2864@pssprod01, Edition=Grid Edition, Mode=Production, CpuCount=2, SocketCount=1)
+2014-09-25 14:49:07.269 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member(Id=2, Timestamp=2014-09-25 14:48:51.37, Address=10.199.0.26:8088, MachineId=52506, Location=process:2769@pssprod01) joined Cluster with senior member 1
+2014-09-25 14:49:07.269 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member(Id=3, Timestamp=2014-09-25 14:49:06.931, Address=10.199.0.29:8089, MachineId=52509, Location=process:6188@pssprod03) joined Cluster with senior member 1
+2014-09-25 14:49:07.269 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member(Id=4, Timestamp=2014-09-25 14:49:06.961, Address=10.199.0.27:8089, MachineId=52507, Location=process:15116@pssprod02) joined Cluster with senior member 1
+2014-09-25 14:49:07.270 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member(Id=5, Timestamp=2014-09-25 14:49:07.005, Address=10.199.0.32:8088, MachineId=52512, Location=process:9053@dssprod02) joined Cluster with senior member 1
+2014-09-25 14:49:07.272 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member 1 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:07.272 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member 1 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:07.275 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member 2 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:07.275 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member 2 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:09.619 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=n/a): Member 5 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:09.678 Oracle Coherence GE 3.3.1/389 <Info> (thread=main, member=6): Restarting Service: DistributedCache
+2014-09-25 14:49:09.806 Oracle Coherence GE 3.3.1/389 <D5> (thread=TcpRingListener, member=6): TcpRing: connecting to member 5 using TcpSocket{State=STATE_OPEN, Socket=Socket[addr=/10.199.0.32,port=51524,localport=8088]}
+2014-09-25 14:49:09.893 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 4 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:09.893 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache joined the cluster with senior service member 1
+2014-09-25 14:49:09.905 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache: received ServiceConfigSync containing 264 entries
+2014-09-25 14:49:09.907 Oracle Coherence GE 3.3.1/389 <Info> (thread=main, member=6): Restarting Service: ReplicatedCache
+2014-09-25 14:49:09.911 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Asking member 2 for 86 out of 171 primary partitions
+2014-09-25 14:49:09.914 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 5 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:10.024 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Asking member 2 for 85 out of 85 primary partitions
+2014-09-25 14:49:10.118 Oracle Coherence GE 3.3.1/389 <D5> (thread=ReplicatedCache, member=6): Service ReplicatedCache joined the cluster with senior service member 1
+2014-09-25 14:49:10.321 Oracle Coherence GE 3.3.1/389 <D5> (thread=ReplicatedCache, member=6): Creating a temporary map: 1
+2014-09-25 14:49:10.331 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 4 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:30.241 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=7, Timestamp=2014-09-25 14:49:30.061, Address=10.199.0.30:8089, MachineId=52510, Location=process:19830@dssprod01) joined Cluster with senior member 1
+2014-09-25 14:49:31.883 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 7 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:36.920 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 2 left service DistributedCache with senior member 1
+2014-09-25 14:49:36.920 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 2 left service ReplicatedCache with senior member 1
+2014-09-25 14:49:36.924 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 2 left Cluster with senior member 1
+2014-09-25 14:49:36.927 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=8, Timestamp=2014-09-25 14:49:36.721, Address=10.199.0.26:8088, MachineId=52506, Location=process:2769@pssprod01) joined Cluster with senior member 1
+2014-09-25 14:49:36.946 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 8 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:36.989 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 8 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:37.451 Oracle Coherence GE 3.3.1/389 <Error> (thread=Cluster, member=6): Received panic from senior member Member(Id=1, Timestamp=2014-09-25 14:47:45.342, Address=10.199.0.26:8089, MachineId=52506, Location=process:2864@pssprod01) caused by Member(Id=4, Timestamp=2014-09-25 14:41:55.834, Address=10.199.0.27:8088, MachineId=52507, Location=process:14840@pssprod02)
+2014-09-25 14:49:38.335 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 7 left service DistributedCache with senior member 1
+2014-09-25 14:49:38.336 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 85 out of 85 partitions to a machine-safe backup 1 at member 8 (under 85)
+2014-09-25 14:49:38.337 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 7 left Cluster with senior member 1
+2014-09-25 14:49:41.652 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=9, Timestamp=2014-09-25 14:49:41.454, Address=10.199.0.27:8088, MachineId=52507, Location=process:14840@pssprod02) joined Cluster with senior member 1
+2014-09-25 14:49:41.677 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 9 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:41.698 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 9 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:41.704 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring 20 out of 85 primary partitions to member 9 requesting 20
+2014-09-25 14:49:41.716 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=10, Timestamp=2014-09-25 14:49:41.514, Address=10.199.0.30:8089, MachineId=52510, Location=process:19830@dssprod01) joined Cluster with senior member 1
+2014-09-25 14:49:41.741 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=11, Timestamp=2014-09-25 14:49:41.542, Address=10.199.0.29:8088, MachineId=52509, Location=process:5974@pssprod03) joined Cluster with senior member 1
+2014-09-25 14:49:41.756 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 10 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:41.760 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 106 from member 8 (over 21) to member 9 (under 65)
+2014-09-25 14:49:41.869 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 107 from member 8 (over 20) to member 9 (under 64)
+2014-09-25 14:49:41.959 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 11 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:41.986 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 11 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:41.987 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring 13 out of 65 primary partitions to member 11 requesting 13
+2014-09-25 14:49:41.999 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 119 from member 8 (over 32) to member 11 (under 52)
+2014-09-25 14:49:42.101 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 120 from member 8 (over 31) to member 11 (under 51)
+2014-09-25 14:49:42.212 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 121 from member 8 (over 30) to member 11 (under 50)
+2014-09-25 14:49:42.314 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 122 from member 8 (over 29) to member 11 (under 49)
+2014-09-25 14:49:42.416 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 123 from member 8 (over 28) to member 9 (under 47)
+2014-09-25 14:49:42.518 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 124 from member 8 (over 27) to member 11 (under 46)
+2014-09-25 14:49:42.621 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 125 from member 8 (over 26) to member 11 (under 44)
+2014-09-25 14:49:42.723 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 126 from member 8 (over 25) to member 9 (under 43)
+2014-09-25 14:49:42.825 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 127 from member 8 (over 24) to member 9 (under 41)
+2014-09-25 14:49:42.926 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 128 from member 8 (over 23) to member 11 (under 40)
+2014-09-25 14:49:43.029 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 129 from member 8 (over 22) to member 11 (under 38)
+2014-09-25 14:49:43.132 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 130 from member 8 (over 21) to member 11 (under 37)
+2014-09-25 14:49:43.233 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 131 from member 8 (over 20) to member 9 (under 35)
+2014-09-25 14:49:43.340 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 132 from member 8 (over 19) to member 11 (under 34)
+2014-09-25 14:49:43.443 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 133 from member 8 (over 18) to member 11 (under 32)
+2014-09-25 14:49:43.546 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 134 from member 8 (over 17) to member 9 (under 30)
+2014-09-25 14:49:43.648 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 135 from member 8 (over 16) to member 11 (under 29)
+2014-09-25 14:49:43.751 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 136 from member 8 (over 15) to member 11 (under 27)
+2014-09-25 14:49:43.852 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 137 from member 8 (over 13) to member 9 (under 25)
+2014-09-25 14:49:43.954 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 138 from member 8 (over 12) to member 11 (under 25)
+2014-09-25 14:49:44.057 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 139 from member 8 (over 10) to member 11 (under 23)
+2014-09-25 14:49:44.160 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 140 from member 8 (over 7) to member 11 (under 21)
+2014-09-25 14:49:44.262 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 141 from member 8 (over 4) to member 11 (under 19)
+2014-09-25 14:49:44.364 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 142 from member 8 (over 1) to member 11 (under 17)
+2014-09-25 14:49:44.872 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): TcpRing: disconnected from member 5 due to a kill request
+2014-09-25 14:49:44.873 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 5 left service DistributedCache with senior member 1
+2014-09-25 14:49:44.873 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 5 left service ReplicatedCache with senior member 1
+2014-09-25 14:49:44.876 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 5 left Cluster with senior member 1
+2014-09-25 14:49:44.910 Oracle Coherence GE 3.3.1/389 <Info> (thread=DistributedCache, member=6): Restored from backup 34 partitions
+2014-09-25 14:49:44.910 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 
+2014-09-25 14:49:45.789 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=12, Timestamp=2014-09-25 14:49:45.589, Address=10.199.0.32:8088, MachineId=52512, Location=process:9053@dssprod02) joined Cluster with senior member 1
+2014-09-25 14:49:45.809 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 12 joined Service DistributedCache with senior member 1
+2014-09-25 14:49:45.850 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 12 joined Service ReplicatedCache with senior member 1
+2014-09-25 14:49:45.856 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 1> Transferring 34 out of 34 vulnerable partitions to member 12 requesting 34
+2014-09-25 14:49:46.875 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): TcpRing: connecting to member 12 using TcpSocket{State=STATE_OPEN, Socket=Socket[addr=/10.199.0.32,port=8088,localport=55597]}
+2014-09-25 14:50:15.016 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=13, Timestamp=2014-09-25 14:50:14.832, Address=10.199.0.32:8089, MachineId=52512, Location=process:9405@dssprod02) joined Cluster with senior member 1
+2014-09-25 14:50:16.495 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 13 joined Service DistributedCache with senior member 1
+2014-09-25 14:50:33.232 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=14, Timestamp=2014-09-25 14:50:33.055, Address=10.199.0.30:8090, MachineId=52510, Location=process:20092@dssprod01) joined Cluster with senior member 1
+2014-09-25 14:51:30.272 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 14 joined Service DistributedCache with senior member 1
+2014-09-25 14:51:49.990 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=15, Timestamp=2014-09-25 14:51:49.806, Address=10.199.0.32:8090, MachineId=52512, Location=process:9568@dssprod02) joined Cluster with senior member 1
+2014-09-25 14:52:31.372 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 8 left service DistributedCache with senior member 1
+2014-09-25 14:52:31.373 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 8 left service ReplicatedCache with senior member 1
+2014-09-25 14:52:31.374 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 8 left Cluster with senior member 1
+2014-09-25 14:52:31.926 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Asking member 12 for 13 out of 17 primary partitions
+2014-09-25 14:52:32.033 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 9 out of 28 partitions to a machine-safe backup 1 at member 12 (under 33)
+2014-09-25 14:52:32.035 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 8 out of 19 partitions to a machine-safe backup 1 at member 9 (under 31)
+2014-09-25 14:52:32.038 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 5 out of 11 partitions to a machine-safe backup 1 at member 11 (under 17)
+2014-09-25 14:52:32.146 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Deferring the distribution due to 22 pending configuration updates
+2014-09-25 14:52:32.173 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 1 left service DistributedCache with senior member 6
+2014-09-25 14:52:32.173 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=143, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.174 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 1 left service ReplicatedCache with senior member 4
+2014-09-25 14:52:32.174 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=144, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.178 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=145, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.178 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=146, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.179 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=147, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.179 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=148, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.179 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=149, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.179 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=150, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.180 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=151, value=<bucket storage-0='6' storage-1='12'/>
+2014-09-25 14:52:32.180 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=152, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.180 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=153, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.180 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=154, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.181 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=155, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.181 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=156, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.181 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=157, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.181 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=158, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.182 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=159, value=<bucket storage-0='6' storage-1='9'/>
+2014-09-25 14:52:32.182 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=160, value=<bucket storage-0='6' storage-1='11'/>
+2014-09-25 14:52:32.182 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=161, value=<bucket storage-0='6' storage-1='11'/>
+2014-09-25 14:52:32.183 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=162, value=<bucket storage-0='6' storage-1='11'/>
+2014-09-25 14:52:32.183 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=163, value=<bucket storage-0='6' storage-1='11'/>
+2014-09-25 14:52:32.183 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Service DistributedCache: resending ServiceConfigRequest to member 6 for key=164, value=<bucket storage-0='6' storage-1='11'/>
+2014-09-25 14:52:32.183 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 1 left Cluster with senior member 3
+2014-09-25 14:52:32.184 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache: sending ServiceConfigSync to all
+2014-09-25 14:52:32.220 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 6 out of 6 partitions to a machine-safe backup 1 at member 12 (under 22)
+2014-09-25 14:52:36.999 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 15 joined Service DistributedCache with senior member 6
+2014-09-25 14:52:37.008 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache: sending ServiceConfigSync containing 291 entries to Member 15
+2014-09-25 14:52:39.003 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 119 from member 11 (over 1) to member 9 (under 4)
+2014-09-25 14:52:42.509 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=16, Timestamp=2014-09-25 14:52:42.318, Address=10.199.0.30:8091, MachineId=52510, Location=process:20436@dssprod01) joined Cluster with senior member 3
+2014-09-25 14:52:42.963 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 9 left service DistributedCache with senior member 6
+2014-09-25 14:52:42.963 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 9 left service ReplicatedCache with senior member 4
+2014-09-25 14:52:42.965 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 9 left Cluster with senior member 3
+2014-09-25 14:52:42.983 Oracle Coherence GE 3.3.1/389 <Info> (thread=DistributedCache, member=6): Restored from backup 7 partitions
+2014-09-25 14:52:42.983 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 205, 206, 207, 208, 210, 211, 253, 
+2014-09-25 14:52:43.149 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 16 joined Service DistributedCache with senior member 6
+2014-09-25 14:52:43.165 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache: sending ServiceConfigSync containing 291 entries to Member 16
+2014-09-25 14:52:43.255 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 16 joined Service ReplicatedCache with senior member 4
+2014-09-25 14:52:43.490 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 16 joined Service ExtendTcpProxyService with senior member 16
+2014-09-25 14:52:44.241 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=17, Timestamp=2014-09-25 14:52:44.047, Address=10.199.0.26:8088, MachineId=52506, Location=process:4041@pssprod01) joined Cluster with senior member 3
+2014-09-25 14:52:44.398 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 17 joined Service DistributedCache with senior member 6
+2014-09-25 14:52:44.408 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache: sending ServiceConfigSync containing 291 entries to Member 17
+2014-09-25 14:52:44.491 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 17 joined Service ReplicatedCache with senior member 4
+2014-09-25 14:52:44.707 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 17 joined Service ExtendTcpProxyService with senior member 16
+2014-09-25 14:52:44.956 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 4 left service DistributedCache with senior member 6
+2014-09-25 14:52:44.958 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Asking member 11 for 2 out of 2 primary partitions
+2014-09-25 14:52:44.958 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 4 left service ReplicatedCache with senior member 6
+2014-09-25 14:52:44.959 Oracle Coherence GE 3.3.1/389 <D5> (thread=ReplicatedCache, member=6): Service ReplicatedCache: sending ServiceConfigSync to all
+2014-09-25 14:52:44.959 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 4 left Cluster with senior member 3
+2014-09-25 14:52:45.062 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): Asking member 12 for 11 out of 11 primary partitions
+2014-09-25 14:52:45.173 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 11 out of 22 partitions to a machine-safe backup 1 at member 11 (under 30)
+2014-09-25 14:52:45.177 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 6 out of 11 partitions to a machine-safe backup 1 at member 12 (under 15)
+2014-09-25 14:52:45.287 Oracle Coherence GE 3.3.1/389 <D4> (thread=DistributedCache, member=6): 1> Transferring 5 out of 5 partitions to a machine-safe backup 1 at member 11 (under 11)
+2014-09-25 14:52:45.393 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 34 from member 12 (over 1) to member 11 (under 6)
+2014-09-25 14:52:45.428 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member(Id=18, Timestamp=2014-09-25 14:52:45.231, Address=10.199.0.27:8088, MachineId=52507, Location=process:15116@pssprod02) joined Cluster with senior member 3
+2014-09-25 14:52:45.452 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 18 joined Service DistributedCache with senior member 6
+2014-09-25 14:52:45.457 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): Service DistributedCache: sending ServiceConfigSync containing 291 entries to Member 18
+2014-09-25 14:52:46.137 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 35 from member 12 (over 2) to member 11 (under 5)
+2014-09-25 14:52:46.140 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 18 left service DistributedCache with senior member 6
+2014-09-25 14:52:46.140 Oracle Coherence GE 3.3.1/389 <D5> (thread=DistributedCache, member=6): 2> Transferring backup[1] for partition 36 from member 12 (over 1) to member 11 (under 4)
+2014-09-25 14:52:46.156 Oracle Coherence GE 3.3.1/389 <D5> (thread=Cluster, member=6): Member 18 left Cluster with senior member 3
+2014-09-25 14:52:52.593 Oracle Coherence GE 3.3.1/389 <D4> (thread=ShutdownHook, member=6): ShutdownHook: stopping cluster node
